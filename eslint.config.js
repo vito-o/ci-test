@@ -20,6 +20,11 @@ export default defineConfig([
       js,
       react: pluginReact,
     },
+    settings: {
+      react: {
+        version: "detect", // 自动检测 installed React 版本
+      },
+    },
     rules: {
       ...pluginReact.configs.recommended.rules,
       "react/prop-types": "off",
